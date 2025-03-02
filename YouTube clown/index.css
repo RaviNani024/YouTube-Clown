@@ -1,0 +1,236 @@
+p{
+    font-family: roboto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+body {
+    margin: 0;
+}
+.overall {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+    margin-left: 75px;
+    background-color: rgb(243, 241, 241);
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.matter{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 13px;
+}
+.thumbnail{
+    width: 100%;
+}
+.channel{
+    width: 40px;
+    border-radius: 50px;
+}
+.title{
+    font-size: 14px;
+    font-weight: 550;
+    padding-bottom: 13px;
+}
+.author,
+.views{
+    color: #606060;
+    font-size: 12px;
+}
+.author{
+    padding-bottom: 4px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid rgb(229, 223, 223);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    margin-top: 0;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    z-index: 1;
+}
+.left-section,
+.middle-section,
+.right-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    width: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.logo{
+    width: 90px;
+}
+.voice{
+    width: 30px;
+    border-radius: 50px;
+    background-color: rgb(246, 240, 240);
+}
+.middle-section{
+    width: 470px;
+}
+.right-section{
+    width: 182px;
+    justify-content: space-between;
+    margin-right: 24px;
+}
+.create,
+.apps,
+.notifications,
+.noti-icon,
+.search-img,
+.voice-img{
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+.profile{
+    width: 32px;
+    border-radius: 50px;
+}
+.search-bar{
+    flex: 1;
+    height: 40px;
+    font-family: roboto;
+    font-size: 16px;
+    padding-left: 10px;
+    border-width: 1px;
+    border-color: rgb(192, 192, 192);
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+    border-style: solid;
+    width: 0;
+}
+.search-button{
+    margin-left: -1px;
+    height: 44px;
+    padding: 0px 15px;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+    border: 1px solid rgb(192, 192, 192);
+}
+.voice-button{
+    margin-left: 5px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    color: rgb(176, 171, 171);
+}
+.voice-button,
+.search-button,
+.rel,
+.noti-icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar{
+    margin-top: 0;
+    width: 72px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr;
+    position: fixed;
+    left: 0;
+    top: 52px;
+    bottom: 0;
+    background-color: white;
+    z-index: 2;
+}
+
+.home,
+.explore,
+.sub,
+.original,
+.music,
+.library{
+    width: 24px;
+    height: 24px;
+}
+.sidediv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    cursor: pointer;
+}
+.sidediv:hover{
+    background-color: lightgray;
+}
+.thumdiv{
+    position: relative;
+}
+.time{
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    bottom: 8px;
+    right: 4px;
+    font-size: 12px;
+    padding:4px;
+    border-radius: 2px;
+}
+.noti-count{
+    position: absolute;
+    top: -5px;
+    right: -2px;
+    background-color: rgb(180, 11, 11);
+    color: white;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 100%;
+    font-size: 11px;
+}
+.sidebar div {
+    font-family: roboto;
+    margin-top: 5px;
+}
+.hover {
+    font-family: roboto;
+    opacity: 0;
+    position: absolute;
+    background-color: rgb(139, 137, 137);
+    color: white;
+    bottom: -40px;
+    padding: 5px;
+    border-radius: 4px;
+    pointer-events: none;
+    white-space: nowrap;
+    font-size: 13px;
+}
+.search-button:hover .hover,
+.voice-button:hover .hover,
+.rel:hover .hover,
+.noti-icon:hover .hover{
+    opacity: 1;
+    transition: opacity 0.15s;
+}
+@media (max-width:930px){
+    .overall {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:931px) and (max-width:1150px) {
+    .overall{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
